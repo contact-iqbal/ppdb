@@ -10,6 +10,16 @@ CREATE TABLE sekolah (
     jenjang ENUM('SMP', 'SMA', 'SMK') NOT NULL,
     kode_lemdik INT UNIQUE
 );
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    nama VARCHAR(100) NOT NULL,
+    tanggal_lahir DATE NOT NULL,
+    wa VARCHAR(20) NOT NULL,
+    nik VARCHAR(20) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
 INSERT INTO sekolah (nama, alamat, telp, deskripsi, gambar, jenjang, kode_lemdik) VALUES
 ('SMK Antartika 1 Sidoarjo', 'Jl. Raya Sidoarjo No.1, Sidoarjo, Jawa Timur', '031-1234567', 'SMK Antartika 1 Sidoarjo berlokasi di pusat kota Sidoarjo.', 'https://radarjatim.id/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-15-at-10.48.34.jpeg', 'SMK', 1),
 ('SMK Antartika 2 Sidoarjo', 'Jl. Diponegoro No.10, Sidoarjo, Jawa Timur', '031-7654321', 'SMK Antartika 2 Sidoarjo fokus pada pengembangan teknologi dan bisnis.', 'https://smkantartika2-sda.sch.id/wp-content/uploads/2025/03/image-392x272.png', 'SMK', 2),
