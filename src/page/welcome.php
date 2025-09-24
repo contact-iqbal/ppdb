@@ -27,7 +27,7 @@
                 class="flex-1 p-3 bg-[#4f5686] rounded-lg cursor-pointer text-center text-white hover:bg-[#41466e] transition z-10">
                 Daftar
             </a>
-            <a href="#" class="flex-1 p-3 bg-[#da3732] rounded-lg cursor-pointer text-center text-white hover:bg-[#b52a26] transition z-10">
+            <a href="../../src/page/signin.php" class="flex-1 p-3 bg-[#da3732] rounded-lg cursor-pointer text-center text-white hover:bg-[#b52a26] transition z-10">
                 Masuk
             </a>
         </div>

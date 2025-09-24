@@ -5,7 +5,7 @@ include __DIR__ . '/../../../config.php';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'] ?? '';
     $password = $_POST['password'] ?? '';
-    $nama = $_POST['nama'] ?? ''; 
+    $nama = $_POST['nama'] ?? '';
     $tanggal_lahir = $_POST['tanggal_lahir'] ?? '';
     $wa = $_POST['wa'] ?? '';
     $nik = $_POST['nik'] ?? '';
@@ -38,19 +38,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 // redirect ke login jika belum login
 if (!isset($_SESSION['user'])) {
-    header("Location: ../signup.php");
+    header("Location: ../welcome.php");
     exit;
 }
 
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
 </head>
+
 <body>
-    <?php if(isset($_SESSION['message'])): ?>
+    <?php if (isset($_SESSION['message'])): ?>
         <div style="color: <?= $_SESSION['message_type'] === 'success' ? 'green' : 'red' ?>">
             <?= $_SESSION['message'] ?>
         </div>
@@ -59,6 +61,7 @@ if (!isset($_SESSION['user'])) {
 
     <h1>Selamat datang, <?= $_SESSION['user']['nama'] ?></h1>
     <p>Email: <?= $_SESSION['user']['email'] ?></p>
-    <p><a href="logout.php">Logout</a></p>
+    <p><a href="../../controller/logout.php">Logout</a></p>
 </body>
+
 </html>
