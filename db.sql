@@ -16,4 +16,3 @@ INSERT INTO sekolah (nama, alamat, telp, deskripsi, gambar, jenjang, kode_lemdik
 ('SMA Antartika Sidoarjo', 'Jl. Pahlawan No.5, Sidoarjo', '031-9876543', 'SMA Antartika Sidoarjo unggul di bidang akademik dan non-akademik.', 'https://smaantarda.sch.id/wp-content/uploads/2024/08/2023-07-06.jpg', 'SMA', 3),
 ('SMA Antartika Surabaya', 'Jl. Ahmad Yani No.99, Surabaya', '031-111222', 'SMA Antartika Surabaya terkenal dengan program internasional.', 'https://lh5.googleusercontent.com/p/AF1QipO_bti3gDPnkOoUYW3HMx4vd-b0eUG3xsYziwlD=w408-h306-k-no', 'SMA', 4),
 ('SMP Antartika Surabaya', 'Jl. Mayjen Sungkono No.8, Surabaya', '031-333444', 'SMP Antartika Surabaya memberikan pendidikan berbasis karakter.', 'https://lh5.googleusercontent.com/p/AF1QipMG4mLzz5CvVLRjgxkdhv01ETYT1WRoQ0eCHUbh=w203-h360-k-no', 'SMP', 5);
---ngerunnya pake [mysql -u root -p < db.sql] di folder ini

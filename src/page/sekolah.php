@@ -1,20 +1,9 @@
 <?php include '../../layout.php'; ?>
-
 <?php
-$pdo = new PDO("mysql:host=localhost;dbname=antartika;charset=utf8", "root", "");
-
-$jenjang = $_GET['jenjang'] ?? null;
-
-if ($jenjang) {
-    $stmt = $pdo->prepare("SELECT * FROM sekolah WHERE jenjang = :jenjang");
-    $stmt->execute(['jenjang' => $jenjang]);
-    $listSekolah = $stmt->fetchAll(PDO::FETCH_ASSOC);
-} else {
-    $listSekolah = [];
-}
-$stmt = $pdo->query("SELECT nama, kode_lemdik FROM sekolah");
-$mapData = $stmt->fetchAll(PDO::FETCH_KEY_PAIR);
+include '../../config.php'; // sudah termasuk koneksi $pdo
 ?>
+
+
 
 <style>
     .stroke {
