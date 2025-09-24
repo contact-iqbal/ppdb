@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 // redirect ke login jika belum login
 if (!isset($_SESSION['user'])) {
-    header("Location: login.php");
+    header("Location: ../signup.php");
     exit;
 }
 

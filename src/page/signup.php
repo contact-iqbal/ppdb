@@ -23,7 +23,7 @@
                 <div class="w-full max-w-2xl">
                     <form x-data="multiStepForm()" x-ref="form"
                           @submit.prevent="handleSubmit"
-                          action="/ppdb/src/page/pendaftar/home.php" method="post"
+                          action="/ppdb/src/controller/signup_process.php" method="post"
                           class="w-full flex flex-col gap-4">
 
                         <!-- STEP 1 -->
