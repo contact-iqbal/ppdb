@@ -1,6 +1,12 @@
 <?php include '../../layout.php'; ?>
 <?php session_start(); ?>
 
+<style>
+    .stroke {
+        -webkit-text-stroke: 1px ghostwhite;
+    }
+</style>
+
 <section class="w-full min-h-screen flex flex-col bg-blue-900 px-4 py-10 md:px-20">
 
     <div class="w-full flex-1 rounded-lg shadow-lg bg-white flex flex-col items-center justify-center font-[poppins] p-6 md:p-12 lg:p-16">
